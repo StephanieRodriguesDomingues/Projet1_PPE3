@@ -37,7 +37,7 @@ if (empty($grainsel)) {
 	$errmsg_arr[] = 'Vous devez mettre votre grainsel.';
 	$errflag = true;
 }
-
+// préparation de la requête SQL
 $result = $conn->prepare("INSERT INTO visiteur VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 $result->bindParam(1, $matricule);
 $result->bindParam(2, $nom);
