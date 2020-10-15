@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>INSCRIPTION</title>
+	</head>
+	<body bgcolor="white" text="5599EE">
+		<div name="haut" style="margin: 2 2 2 2 ;height:6%;"><h1><img src="logo.jpg" width="100" height="60" />Gestion des visites</h1></div>
+		<div name="gauche" style="float:left;width:18%; background-color:white; height:100%;"></div>
+		<div name="droite" style="float:left;width:80%;">
+			<div name="bas" style="margin : 10 2 2 2;clear:left;background-color:77AADD;height:88%;">
+				<form name="formINSCRIPTION" method="POST" action="recupINSCRIPTION.php">
+					<h1>Inscription</h1>
+					<label class="titre">MATRICULE : </label><input type="text" name="mat">
+					<br>
+					<label class="titre">NOM : </label><input type="text" name="nom" maxlength="100">
+					<br>
+					<label class="titre">PRENOM : </label><input type="text" name="prenom" maxlength="100">
+					<br>
+					<label class="titre">ADRESSE : </label><input type="text" name="adresse">
+					<br>
+					<label class="titre">CODE POSTAL : </label><input type="number" name="cpostal">
+					<br>
+					<label class="titre">VILLE : </label><input type="text" name="ville">
+					<br>
+					<label class="titre">DATE D'EMBAUCHE : </label><input type="date" name="dateEmb">
+					<br>
+					<label class="titre" for="codesec">SECTEUR : </label>
+					<select id="codesec">
+						<option value="E">Est</option>
+						<option value="N">Nord</option>
+						<option value="O">Ouest</option>
+						<option value="P">Paris-Centre</option>
+						<option value="S">Sud</option>
+					</select>
+					<br>
+					<label class="titre" for="labcode">LABORATOIRE : </label>
+					<select id="labcode">
+						<option value="BC">Bichat</option>
+						<option value="GY">Gyverny</option>
+						<option value="SW">Swiss Kane</option>
+					</select>
+					<br>
+					<label class="titre">DEPARTEMENT : </label><input type="number" name="depcode" size="3" maxlength="3">
+					<br>
+					<label class="titre">MOT DE PASSE : </label><input type="password" name="mdp">
+					<br>
+					<label class="titre">GRAINSEL : </label><input type="number" name="grsel">
+					<br>
+					<button name="register" />OK</button>
+				</form>
+				<h4><a href="./formAUTHENTIFICATION.html">Deja inscrit ? Cliquez ici pour vous connecter.</a></h4>
+			</div>
+		</div>
+	</body>
+</html>
